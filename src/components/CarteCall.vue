@@ -1,7 +1,7 @@
 <template>
       <div>
         <span>{{check(personnage.numero)}}</span>
-        <span>{{ personnage.date }}</span>
+        <span class="date">{{ personnage.date }}</span>
         <img @click="call" src="../assets/telephone.png">
 
     </div>
@@ -26,7 +26,7 @@ data(){
 methods:{
         call(){
             this.appel.numero = this.personnage.numero
-            this.appel.date = new Date().toLocaleTimeString()
+            this.appel.date = new Date().toLocaleString()
             console.log(this.appel)
             this.$store.commit('call', this.appel)
 
@@ -60,6 +60,11 @@ methods:{
     }
     img{
         width: 25px;
+    }
+    .date{
+        width: 50%;
+        font-size: 75%;
+        color:rgb(128, 128, 128)
     }
 
 </style>

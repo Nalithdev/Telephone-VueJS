@@ -23,10 +23,10 @@ data(){
 methods:{
         call(){
             this.appel.numero = this.personnage.numero
-            this.appel.date = new Date().toLocaleTimeString()
+            this.appel.date = new Date().toLocaleString()
             console.log(this.appel)
             this.$store.commit('call', this.appel)
-                
+
             
         }
     }
