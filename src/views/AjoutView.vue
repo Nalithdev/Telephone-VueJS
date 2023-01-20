@@ -1,9 +1,7 @@
 <template>
-    <div>
+    <div class="tel">
         <h1>Ajouter un Contact</h1>
         <FormPerso :personnages="personnages" />   
-    <div class="cartes">
-</div>
     </div>
 </template>
 <script>
@@ -23,12 +21,12 @@ export default {
 }
 </script>
 <style scoped>
-        .cartes {
-        margin: 50px;
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    
-}
+
+.tel{
+        width: 20%;
+        background-color: rgb(255, 228, 182);
+        padding: 1%;
+        border: 2px solid black;
+        margin: auto;
+    }
 </style>

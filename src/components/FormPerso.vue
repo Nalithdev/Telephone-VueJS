@@ -47,8 +47,6 @@ export default {
 <style scoped>
     form {
         background-color: rgb(255, 228, 182);
-        width: 20vw;
-        margin: 20px auto;
         display: flex;
         flex-direction: column;
         gap: 10px;

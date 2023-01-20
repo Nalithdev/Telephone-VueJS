@@ -1,9 +1,10 @@
 <template>
-      <div>
-        <span>{{check(personnage.numero)}}</span>
+      <div class="call">
+        <h3>{{check(personnage.numero.toString())}}</h3>
+        <div>
         <span class="date">{{ personnage.date }}</span>
         <img @click="call" src="../assets/telephone.png">
-
+        </div>
     </div>
 </template>
 <script>
@@ -47,24 +48,32 @@ methods:{
 }
 </script>
 <style scoped>
-    div {
-        width: 200px;
+    .call {
+        width: 100% ;
         margin: 0 auto;
         height: 50px;
         border-radius: 10px;
         display: flex;
-        align-items: center;
         justify-content: space-around;
+        align-items: center;    
         border-top: 1px solid black ;   
-        border-bottom: 1px solid black ;    
+        border-bottom: 1px solid black ; 
+        gap: 60px;
+           
     }
     img{
         width: 25px;
     }
     .date{
-        width: 50%;
+        display: flex;
+        justify-content: end;
+        width: 40%;
         font-size: 75%;
         color:rgb(128, 128, 128)
     }
-
+    div{
+        width: 25%;
+        display: flex;
+        gap:10px;
+    }
 </style>
